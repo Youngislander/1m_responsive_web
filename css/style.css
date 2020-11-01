@@ -1,0 +1,560 @@
+.main{
+    position: relative;
+}
+.main_nav{position:fixed;
+    transform:rotate(90deg);
+    top:50%;
+    left:-150px;
+    z-index:99
+}
+.main_nav li{float:left; padding:0 20px;}
+.main_nav li:first-child a:hover{
+   border-bottom: 5px solid #ff00d5
+}
+.main_nav li:nth-child(2) a:hover{
+    border-bottom: 5px solid #88ff00
+ }
+
+ .main_nav li:nth-child(3) a:hover{
+    border-bottom: 5px solid #00ffea
+ }
+
+ .main_nav li:nth-child(4) a:hover{
+    border-bottom: 5px solid #ffa824
+ }
+ .main_nav li:nth-child(5) a:hover{
+    border-bottom: 5px solid #f0ff24
+ }
+
+
+.auth_nav{
+    font-size:12px;
+    z-index:99;
+    position: fixed;
+    right:15px;
+    top:30px;
+}
+.auth_nav li{float: left; padding: 0 10px}
+
+.main_vis{
+    height: 100vh;
+    position:relative; 
+    overflow:hidden;
+}
+
+.main_vis .main_img{
+    position: absolute;
+    background: url(../image/main_vis.jpg) no-repeat;
+    width: 55vw;
+    height: 64vh;
+    background-position: center;
+    background-size: cover;
+    bottom: 12vh;
+    right: 7vw;
+  }
+
+.main_txt{
+    position: absolute;
+    top:50px;
+    right:-100%;
+    font-size: 18vw;
+    font-weight: 900;
+    line-height: 1;
+    transition: 1s ease-in-out
+}
+.main_txt.on{
+    right:0%
+}
+.con_img_wrap{
+    position:relative; 
+    height: 314vh;
+    width:100%;
+    margin-bottom: 300px;
+}
+.con_img_wrap .con_img{
+    position:absolute;
+    top:100px;
+    left:0;
+    padding:10vh 20vw 0 15vw;
+    opacity: 0;
+}
+
+.con_img_wrap .con02{
+    top:400px
+}
+.con_img_wrap .con03{
+    top:920px
+}
+.con_img_wrap .con04{
+    top:1655px
+}
+
+.con_img > li{
+    float:left;
+}
+.con_img li img{width: 100%;}
+.con_img .lay01{
+    padding: 5px;
+    width: 25%;
+}
+.con_img .lay02{
+    padding: 10px;
+    width: 50%;
+}
+.con_img .lay03{
+    width: 22%;
+}
+.con_img .lay03 li{
+    float:left
+}
+.con_img .lay03 li:last-child{
+    padding:10px
+}
+
+.dancer_name{
+    position: sticky;
+    font-size: 35px;
+    font-weight: 700;
+    top: 441px;
+    left: 1342px;
+    display: inline-block;
+    z-index: 5;
+}
+
+.name_stick{
+    width: 0px;
+    height: 4px;
+    transition: 0.1s ease;
+    background: black;
+
+}
+.tarzan .name_stick{
+    width:160px
+}
+
+.dancer_name strong{
+    display:block;
+    padding:10px;
+}
+.dancer_name .artist{
+    font-size:16px
+}
+
+.price{
+    width:1200px;
+    margin: 0 auto;
+    padding:10px;
+    box-sizing:border-box
+}
+
+.price_contents{margin-top: 50px;}
+.price strong{display:block; text-align:center; font-size:50px}
+.price ul{overflow:hidden;text-align:center; margin-top: 20px;}
+.price ul li{
+    float: left;
+    width: 33.33%;
+    line-height: 40px; }
+
+.price ul .purchase_btn a{border:2px solid #000000; width:150px; margin:0 auto; transition: 0.3s ease}
+.price ul .purchase_btn a:hover{background: #000000; color:#fff}
+
+.price li a{display:block; font-weight: 700;}
+.price li:first-child{font-weight:700}
+
+.price_more{
+    text-align:center; 
+    font-weight: 400; 
+    margin-top: 100px;
+}
+.price_more p{margin-bottom: 20px;}
+.price_more span{font-weight: 700;}
+.view_btn{display:block; font-weight: 700; width: 150px; transition: 0.3s ease; line-height: 40px; margin: 50px auto; border:2px solid #000000; text-align:center}
+.view_btn:hover{background: #000000; color:#fff}
+
+.questions{position:relative; width: 1200px;  margin: auto; padding: 0 20px;
+    box-sizing: border-box;}
+.all_bg{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity:0;
+    padding: 50px 0;
+    box-sizing: border-box;
+    z-index: -1;
+}
+.qna_list{overflow:hidden; font-size:25px}
+.qna_title{
+    position: sticky;
+    top:0;
+    left:0;
+    margin-left: -100px;
+    padding:130px; font-size: 100px;
+    line-height:1;
+        }
+.qna_list ul li.on .more{
+    transform:rotate(90deg);
+}
+.qna_list ul{float:right; padding-top:158px; padding-right:20px;  width: 500px;}
+.qna_list ul li{position: relative; padding-bottom: 20px; border-bottom: 2px solid #000000;}
+.qna_list span{display:block; font-size:25px; font-weight: 700; margin-top: 20px;}
+
+
+.questions .more{
+    color:white;
+    position:absolute;
+   font-size:16px;
+   top: 8px;
+   right: 18px;
+    text-indent:-9999px;
+    transition: ease 0.2s
+}
+.questions .answer_txt{
+    overflow:hidden;
+    height: 0;
+}
+.questions p{
+    padding-top: 20px;
+    font-size:16px
+}
+
+
+.send_qna{margin-top: 200px; overflow:hidden; color:#fff; padding:140px 0}
+.send_qna p{font-weight:700; margin-bottom: 20px; font-size: 30px; color:#fff}
+.form_box{
+    margin-bottom: 10px;
+}
+.send_box .form_box input{display:block; margin-bottom:20px; padding:10px; box-sizing:border-box;}
+.send_box .form_box input::placeholder{color: #cccccc}
+.send_box .form_box input:first-child{width: 400px; height: 50px; font-size:16px}
+.send_box .form_box input:nth-child(2){width: 644px; height: 50px; font-size:16px}
+.send_box .form_box textarea{width: 100%; height: 173px;font-size:16px; padding:10px}
+.send_box .form_box textarea::placeholder{color:#cccccc}
+.agree{overflow:hidden}
+
+.agree label .label_img{
+    padding-left: 30px;
+    height:20px;
+    background: url(../icon/grey_fill.png) no-repeat;
+    background-size: 20px 20px;
+    position:relative;
+    float:left;
+}    
+.agree.on label .label_img{
+    padding-left: 30px;
+    height:20px;
+    background-size: 20px 20px;
+    background-image: url(../icon/label_check.png);
+    position:relative
+}
+.agree input{position: absolute; top:0; left:0; visibility: hidden;}
+
+.send_box span{display:block; font-size:14px; color:#a0a0a0;}
+
+.send_box button{float:right; font-weight: 700; padding:10px 50px; box-sizing:border-box; border:2px solid #000000; background: #ffffff; }
+
+.contact{background: #fff;}
+.contact .con_wrap{
+    width:1200px; margin:auto; padding: 180px 0; position:relative
+}
+.contact::after{
+    content:"";
+    clear:both;
+    display:block
+}
+.contact div strong{display:block; font-weight: 700; margin-bottom: 10px;}
+.contact ul li{overflow:hidden; padding-top:15px}
+.contact ul li span{display:block; margin-right: 10px; font-weight: 700; float:left}
+
+.con_box{width: 40%;}
+.contact1{margin-bottom: 100px;}
+.map{
+    float:right;
+    margin-top: -225px;
+    width: 60%; height: 400px; background: #cccccc;
+    text-indent:-9999px
+    }
+.contact2{
+    float:left
+}
+
+#map{
+    width: 100%; height: 400px;
+}
+
+.footer{
+    margin-top: 150px;
+    background: #f4f4f4;
+}
+
+.info_box{
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing:border-box;
+    font-size:12px;
+    padding: 28px 0;
+    background: #f4f4f4;
+}
+.info{
+    text-align:center;
+}
+.info strong{
+    display:block;
+    font-weight:700;
+    margin-bottom: 20px
+}
+.info p{
+    margin-bottom: 10px;
+}
+
+.info p:last-child{
+    color:grey
+}
+.info2{
+    margin-top: 40px;
+    overflow:hidden;
+}
+.info2 ul{
+    float:left;
+    padding-right:15px;
+    font-size:12px;
+    color:grey
+}
+.info2 ul a{
+    color:grey
+}
+
+.sns_box{
+    float:right
+}
+
+.sns li{
+    float:left;
+    padding:0 15px;
+}
+.sns li:first-child{
+    margin-top: 3px;
+}
+
+/* 최소사이즈*/
+@media screen and (max-width: 1565px) {
+    .contact,
+    .questions,
+    .price,
+    .contact{
+        width:100%
+    }
+    /* 스크롤 안생기게 */
+    .main_txt{
+        font-size:20vw
+    }
+    .con_img .lay01{
+        width: 23%;
+    }
+    .con_img .lay02{
+        width:50%
+    }
+    .info_box{
+        width:100%
+    }
+    .map{
+        width:43vw
+    }
+    .questions,
+    .contact .con_wrap{
+        width: 75%;
+        box-sizing:border-box;
+    }
+
+}
+
+/* 테블릿 */
+@media screen and (max-width: 1024px) {
+    .qna_title{
+        position:relative;
+        top:auto;
+        left:auto;
+    }
+    .main_txt{
+        font-size:20vw
+    }
+    .main_nav_wrap{
+        width: 485px;
+        height: 15px;
+        margin: 5px auto;
+    }
+    .main_vis .main_img{
+        width: 74vw;
+        right: 0;
+    }
+    .con_img .lay03{
+        width:100%
+    }
+    .con_img .lay03 li{
+        width: 30%;
+    }
+    .contact .con_wrap{
+        width: 100%;
+        padding: 180px 134px;
+        font-size:14px;
+    }
+    .contact ul li span{
+    }
+    .info_box {
+        width: 100%;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+    .info2{
+        margin-top: 85px;
+    }
+    .info2 ul {
+        margin-left: 20px;
+    }
+    .map{
+        float: none;
+        background: #ffffff;
+        width: 100%;
+        padding:15px;
+        box-sizing:border-box;
+        margin-top: 70px;
+    }
+    .contact2 {
+        float: none;
+    }
+    .footer {
+        margin-top: 85px;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 768px) {
+    .main_vis .main_img {
+        width: 127vw;
+        height: 64vh;
+        bottom: 14vh;
+        right: -14vw;
+    }
+    .main_nav{
+        font-size:12px;
+        transform: none;
+        top:74px;
+        left:0px;
+        width: 100%;
+        background: #000;
+        padding-top: 5px;
+    }
+    .main_nav a{
+        font-size:12px;
+        font-weight:700;
+        color:white;
+    }
+    .main_txt{
+        top: 122px;
+        font-size: 21vw;
+    }
+    .main_txt.on {
+        right: 3%;
+    }
+    .main_con .circle,
+    .main_con .line
+    {
+        visibility: hidden;
+    }
+    .con_box{
+        margin: 0 auto;
+        width: 75%;
+    }
+    .con_img .lay02{
+        width: 55%;
+    }
+    .con_img .lay03{
+        width:35%
+    }
+    .con_img_wrap{
+        height:327vh;
+    }
+    .dancer_name{
+        padding-right:20px
+    }
+    .dancer_name strong{
+        font-size: 28px;
+    }
+    .con_img .lay01{
+        width:100%
+    }
+    .con_img .lay03 li:first-child{
+        margin-top:6px;
+        width: 80px;
+    }
+    .con_img .lay03 li:last-child{
+        visibility:hidden;
+    }
+    .price{
+        font-size:12px;
+        padding: 35px;
+    }
+    .qna_list ul{
+        width: 405px;
+    }
+    .price ul li {
+        width: 33.33%;
+    }
+    .price ul .purchase_btn a{
+        width: 92px;
+    }
+    .qna_title{
+        position:sticky;
+        font-size:14vw;
+        margin-top: -70px;
+    }
+    label{
+        font-size:12px;
+    }
+    .send_box button{
+        margin-top: 20px;
+    }
+    .contact .con_wrap{
+        width:100%;
+        margin-top:100px;
+        padding: 0 0;
+        font-size:14px
+    }
+    .contact ul li span{
+    }
+    .info_box {
+        width: 100%;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+    .info2{
+        margin-top: 85px;
+    }
+    .info2 ul {
+        margin-left: 20px;
+    }
+    .map{
+        float: none;
+        background: #ffffff;
+        width: 100%;
+        padding:15px;
+        box-sizing:border-box;
+        margin-top: 70px;
+    }
+    .contact2 {
+        float: none;
+    }
+    .footer {
+        margin-top: 85px;
+    }
+
+    .questions,
+    .contact .con_wrap{
+        width: 100%;
+        padding-top: 80px;
+    }
+}
+
